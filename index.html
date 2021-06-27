@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 style">Quiz App</span>
+    </nav>
+
+    <div id="success"></div>
+    <div id="correctAns" class="container"></div>
+    <div id="wrongAns" class="container"></div>
+
+    <div class="container myContainer">
+        
+        <h1>Attempt all the questions carefully.</h1>
+        <form action="#">
+
+            <ol>
+                <li class="first">
+                    <div>
+                        <div class="question1">What is 2 + 2?</div>
+                        <div id="onSubmit1"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="first" id="f1" value="2">
+                                <label for="first">2</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="first" id="f2" value="3">
+                                <label for="first">3</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="first" id="f3" value="1">
+                                <label for="first">1</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="first" id="f4" value="4">
+                                <label for="first">4</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="second">
+                    <div>
+                        <div class="question2">What is the capital of india?</div>
+                        <div id="onSubmit2"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="second" id="" value="Delhi">
+                                <label for="second">Delhi</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="second" id="" value="Kolkata">
+                                <label for="second">Kolkata</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="second" id="" value="Haryana">
+                                <label for="second">Haryana</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="second" id="" value="Bangalore">
+                                <label for="second">Bangalore</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="third">
+                    <div>
+                        <div class="question3">What is the national flower of india?</div>
+                        <div id="onSubmit3"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="third" id="" value="Rose">
+                                <label for="third">Rose</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="third" id="" value="Lotus">
+                                <label for="third">Lotus</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="third" id="" value="Sunflower">
+                                <label for="third">Sunflower</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="third" id="" value="Marigold">
+                                <label for="third">Marigold</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="fourth">
+                    <div>
+                        <div class="question4">What is 4 * 5?</div>
+                        <div id="onSubmit4"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="fourth" id="" value="20">
+                                <label for="fourth">20</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="fourth" id="" value="30">
+                                <label for="fourth">30</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="fourth" id="" value="15">
+                                <label for="fourth">15</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="fourth" id="" value="0">
+                                <label for="fourth">0</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="fifth">
+                    <div>
+                        <div class="question5">How many days there are in a leap year?</div>
+                        <div id="onSubmit5"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="fifth" id="" value="365">
+                                <label for="fifth">365</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="fifth" id="" value="360">
+                                <label for="fifth">360</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="fifth" id="" value="366">
+                                <label for="fifth">366</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="fifth" id="" value="370">
+                                <label for="fifth">370</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="sixth">
+                    <div>
+                        <div class="question6">From the following which is a pet animal?</div>
+                        <div id="onSubmit6"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="sixth" id="" value="Lion">
+                                <label for="sixth">Lion</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="sixth" id="" value="Bear">
+                                <label for="sixth">Bear</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="sixth" id="" value="Dog">
+                                <label for="sixth">Dog</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="sixth" id="" value="Zebra">
+                                <label for="sixth">Zebra</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="seventh">
+                    <div>
+                        <div class="question7">From the following which is a correct option?</div>
+                        <div id="onSubmit7"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="seventh" id="" value="Humans have two eyes">
+                                <label for="seventh">Humans have two eyes</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="seventh" id="" value="Humans have two ears">
+                                <label for="seventh">Humans have two ears</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="seventh" id="" value="Humans have one nose">
+                                <label for="seventh">Humans have one nose</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="seventh" id="" value="All of the above">
+                                <label for="seventh">All of the above</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="eightth">
+                    <div>
+                        <div class="question8">Which is the national bird of india?</div>
+                        <div id="onSubmit8"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="eightth" id="" value="Peacock">
+                                <label for="eighth">Peacock</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="eightth" id="" value="Pigeon">
+                                <label for="eighth">Pigeon</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="eightth" id="" value="Parrot">
+                                <label for="eighth">Parrot</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="eightth" id="" value="Sparrow">
+                                <label for="eighth">Sparrow</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="nineth">
+                    <div>
+                        <div class="question9">What is the capital of Delhi?</div>
+                        <div id="onSubmit9"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="nineth" id="" value="Delhi">
+                                <label for="nineth">Delhi</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="nineth" id="" value="Haryana">
+                                <label for="nineth">Haryana</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="nineth" id="" value="Uttar Pradesh">
+                                <label for="nineth">Uttar Pradesh</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="nineth" id="" value="Himachal Pradesh">
+                                <label for="nineth">Himachal Pradesh</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+                <li class="tenth">
+                    <div>
+                        <div class="question10">What is the sign of addition?</div>
+                        <div id="onSubmit10"></div>
+                        <ol>
+                            <li>
+                                <input type="radio" name="tenth" id="" value="-">
+                                <label for="tenth">-</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="tenth" id="" value="/">
+                                <label for="tenth">/</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="tenth" id="" value="+">
+                                <label for="tenth">+</label><br>
+                            </li>
+                            <li>
+                                <input type="radio" name="tenth" id="" value="*">
+                                <label for="tenth">*</label><br>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+
+            </ol>
+
+        </form>
+
+        <button class="btn btn-primary" id="submit">Submit</button>
+        <button class="btn btn-primary" id="reloadBtn">Try Again</button>
+
+    </div>
+
+    <footer>
+            <div>Copyright &#169; 2020-2030 www.quizapp.com</div>
+            <div>Created by Mayank Jha</div>
+            <div>On 02/06/2021-03/06/2021</div>
+        </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+<script src="index.js"></script>
+
+</html>
